@@ -10,6 +10,8 @@ const updateTemperature = R.curry((convertFn,city) => {
 })
 
 
-const updatedCities = cities.map(updateTemperature(KtoC))
+const updatedCities = cities.map(updateTemperature(KtoF))
 
-console.log(updatedCities)
+module.exports = {
+        updatedCities
+}
